@@ -20,7 +20,8 @@ curl -o "seg-#1-a1.ts" https://psv4.vkuseraudio.net/s/v1/a2/SFIHgtmyBk04qWBrFhk8
 The URL for the `index.m3u8` file and the segmented `.ts` files can be found by simply monitoring network through your web browser's inspector when you play the audio.
 Fill in the number of segments inside the braces with a range; in my example it's [1-22] as there are 22 segment files here.
 
-After this, we use VLC Media Player's Convert/Save functions to finish the job and combine our segmented `.ts` files into a single file.
+After this, we use VLC Media Player's Convert/Save functions to finish the job and combine our segmented `.ts` files into a single file by opening the `.m3u8` in the Save/Convert window.
+
 I recommend using WAV format + Keep Original Audio Track setting for the highest quality available.
 
 Follow the settings in the screenshots below, or adjust them to your liking.

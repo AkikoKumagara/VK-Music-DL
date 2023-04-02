@@ -18,7 +18,7 @@ curl -o "index.m3u8" https://psv4.vkuseraudio.net/s/v1/a2/SFIHgtmyBk04qWBrFhk8wG
 curl -o "seg-#1-a1.ts" https://psv4.vkuseraudio.net/s/v1/a2/SFIHgtmyBk04qWBrFhk8wG165o9mBCnFVT7c4rNw_d_3ojM6qzUi4-bMz53RvpLdMsu0tbrhx9kgEFFb-5vZFeP60Kgg1UmgCZ1eAQZo3kX-e7LdHZ74wi1rJ1n0sXffrIZMhkcAK9gZLynvLcEmRwuYDWe8d4b1iA/seg-[1-22]-a1.ts```
 ```
 The URL for the `index.m3u8` file and the segmented `.ts` files can be found by simply monitoring network through your web browser's inspector when you play the audio.
-Fill in the number of segments inside the braces with a range; in my example it's [1-22] as there are 22 segment files here.
+Fill in the number of segments inside the braces with a range; in my example it's [1-22] as there are 22 segment files here. You can verify the number of segments in your file by downloading the `.m3u8` file and opening it in a text editor. This file is a playlist/table of contents, the segment at the bottom of the file will be the last segment.
 
 After this, we use VLC Media Player's Convert/Save functions to finish the job and combine our segmented `.ts` files into a single file by opening the `.m3u8` in the Save/Convert window.
 
